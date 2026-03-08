@@ -40,14 +40,10 @@ Clients can explore available treatments, learn about the cosmetician, and reach
 ---
 
 ## 🗂️ Project Structure
-
 ```
 liav_pure_glow/
 │
-├── index.html          # Main entry point
-├── style.css           # Global styles & animations
-├── script.js           # Scroll reveal & interactions
-└── assets/             # Images and media files
+└── index.html          # Main file — HTML, CSS & JS all in one
 ```
 
 ---
