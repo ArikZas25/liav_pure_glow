@@ -65,22 +65,6 @@ open index.html
 Or visit the live site directly:
 👉 **[arikzas25.github.io/liav_pure_glow](https://arikzas25.github.io/liav_pure_glow)**
 
----
-
-## 📬 Contact Liav
-
-<div align="center">
-
-| Platform | Handle |
-|----------|--------|
-| 💬 WhatsApp | [+972 52-676-2340](https://wa.me/972526762340) |
-| 📷 Instagram | [@liavrahamim](https://instagram.com/liavrahamim) |
-| ✉️ Email | [liavr2402@gmail.com](https://mail.google.com/mail/?view=cm&to=liavr2402@gmail.com) |
-
-</div>
-
----
-
 ## 🏗️ Deployment
 
 This project is deployed via **GitHub Pages** — zero cost, zero configuration.
