@@ -1,74 +1,111 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&size=32&pause=1000&color=C9A96E&center=true&vCenter=true&width=600&lines=Liav+%C2%B7+Pure+Glow+%E2%80%94+Cosmetics" alt="Typing SVG" />
+<img src="https://img.shields.io/badge/Hebrew-RTL-%23f4c2c2?style=flat-square" />
+<img src="https://img.shields.io/badge/Status-Live-%23a8d8a8?style=flat-square" />
+<img src="https://img.shields.io/badge/GitHub%20Pages-Deployed-%23cdb4db?style=flat-square" />
+<img src="https://img.shields.io/badge/Single%20File-HTML-%23ffd6a5?style=flat-square" />
 
-<br/>
+# 🌸 Liav · Pure Glow
 
-**A luxury Hebrew-language cosmetics website for a professional cosmetician based in Rishon LeZion, Israel.**
+### *Your skin deserves the purest glow*
 
-<br/>
+**A production-ready Hebrew RTL cosmetics & facial treatment website, built for Liav's beauty business.**
 
-[![Live Site](https://img.shields.io/badge/🌐%20Live%20Site-Pure%20Glow-C9A96E?style=for-the-badge)](https://arikzas25.github.io/liav_pure_glow)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](/)
-[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222?style=for-the-badge&logo=github)](https://arikzas25.github.io/liav_pure_glow)
+[🌐 View Live Site](https://arikzas25.github.io/liav_pure_glow/)
 
 </div>
 
 ---
 
-## 📌 Overview
+## ✨ About the Project
 
-**Liav · Pure Glow** is a modern, fully responsive personal website built for a professional cosmetician. The site is designed to reflect a high-end beauty brand — clean, elegant, and easy to navigate.
+**Liav · Pure Glow** is a fully custom, single-file Hebrew website for a professional facial treatment business. Designed with a **soft luxury aesthetic** — cream, blush, mauve & teal tones — the site delivers an elegant client experience from first impression to booking.
 
-Clients can explore available treatments, learn about the cosmetician, and reach out directly to book an appointment. All pricing is handled personally, keeping the experience intimate and professional.
+Everything is packed into one clean HTML file. No frameworks. No dependencies. Just smooth, beautiful vanilla web dev. 💅
 
 ---
 
-## ✨ Highlights
+## 🎨 Features
 
 | Feature | Details |
-|--------|---------|
-| 🌸 RTL Hebrew Layout | Fully right-to-left, native Hebrew UX |
-| 📱 Responsive Design | Optimized for mobile, tablet, and desktop |
-| 🎞️ Animations | Smooth scroll-reveal effects throughout |
-| 🔤 Google Fonts | Playfair Display for a luxury aesthetic |
-| 💬 Direct Contact | WhatsApp, Instagram & Gmail compose link |
-| ⚡ Zero Dependencies | Pure HTML — no frameworks |
+|---|---|
+| 🌺 **Soft Luxury Design** | Cream, blush, mauve & teal color palette |
+| 📱 **Fully Responsive** | Looks stunning on mobile, tablet & desktop |
+| 🔤 **Hebrew RTL** | Native right-to-left layout throughout |
+| 🧭 **Fixed Navigation** | Collapsible sidebar navigation |
+| 💆 **Treatment Cards** | Showcases all available facial treatments |
+| 🖼️ **Gallery** | Lazy-loaded image gallery for smooth performance |
+| 🌊 **Parallax Banner** | Immersive scrolling hero effect |
+| 🎆 **Fireworks Animation** | Celebratory effect on form submission |
+| 💬 **WhatsApp Booking** | Floating WhatsApp button for easy client contact |
+| 📅 **Booking Form** | Integrated appointment request form |
+| ⚡ **Single File** | Zero build tools — just one HTML file |
 
 ---
 
-## 🗂️ Project Structure
+## 🗂️ Sections
+
+- **Hero** — Full-screen intro with tagline & CTA
+- **About** — Liav's story and approach to skincare
+- **Treatments** — Cards showcasing each facial service
+- **Experience** — Trust-building stats & highlights
+- **Gallery** — Lazy-loaded photo gallery
+- **Booking** — Appointment form with WhatsApp integration
+- **Contact** — Contact info & social links
+
+---
+
+## 🛠️ Tech Stack
+
 ```
-liav_pure_glow/
-│
-└── index.html          # Main file — HTML, CSS & JS all in one
+HTML5       →  Single-file architecture
+CSS3        →  Custom properties, animations, parallax
+Vanilla JS  →  Gallery, sidebar, form handling, fireworks
+Google Fonts → Playfair Display + elegant pairing
+GitHub Pages → Live deployment
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-No build tools or dependencies needed. Just clone and open:
-
 ```bash
+# Clone the repo
 git clone https://github.com/arikzas25/liav_pure_glow.git
-cd liav_pure_glow
+
+# Open the site
 open index.html
 ```
 
-Or visit the live site directly:
-👉 **[arikzas25.github.io/liav_pure_glow](https://arikzas25.github.io/liav_pure_glow)**
+That's it! No installs. No build step. Just open and go. 🌿
 
-## 🏗️ Deployment
+---
 
-This project is deployed via **GitHub Pages** — zero cost, zero configuration.
+## 📂 Project Structure
 
-Any commit pushed to the `main` branch is automatically reflected on the live site within minutes.
+```
+liav_pure_glow/
+└── index.html      ← Everything lives here ✨
+```
+
+---
+
+## 🌐 Live Demo
+
+👉 **[arikzas25.github.io/liav_pure_glow](https://arikzas25.github.io/liav_pure_glow/)**
+
+---
+
+## 🤍 Credits
+
+Designed & developed with care for **Liav's Pure Glow** beauty business.
+
+Built by [@arikzas25](https://github.com/arikzas25)
 
 ---
 
 <div align="center">
 
-*© 2026 Liav · Pure Glow Cosmetics · ראשון לציון · כל הזכויות שמורות*
+*Made with 💗 and a lot of CSS*
 
 </div>
