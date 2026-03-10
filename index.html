@@ -280,7 +280,7 @@
         <h2 class="section-title reveal">Pure Glow Treatments</h2>
         <div class="services-grid">
             <div class="service-card reveal" onclick="bookTreatment('טיפול פנים קלאסי')"><span class="service-icon">✦</span><div class="service-name">טיפול פנים קלאסי</div><p class="service-desc">ניקוי עמוק, לחות ואיזון העור — הבסיס לעור בריא ומזוהר.</p></div>
-            <div class="service-card reveal" onclick="bookTreatment('טיפול אנטי-אייג\'ינג')"><span class="service-icon">◈</span><div class="service-name">טיפול אנטי-אייג'ינג</div><p class="service-desc">טכניקות מתקדמות להפחתת קמטים ולחידוש מרקם העור.</p></div>
+            <div class="service-card reveal" onclick="bookTreatment('טיפול אנטי-אייג׳ינג')"><span class="service-icon">◈</span><div class="service-name">טיפול אנטי-אייג׳ינג</div><p class="service-desc">טכניקות מתקדמות להפחתת קמטים ולחידוש מרקם העור.</p></div>
             <div class="service-card reveal" onclick="bookTreatment('טיפול לחות אינטנסיבי')"><span class="service-icon">◇</span><div class="service-name">טיפול לחות אינטנסיבי</div><p class="service-desc">תזונה עמוקה לעור יבש ועייף — זוהר שמתחיל מבפנים.</p></div>
             <div class="service-card reveal" onclick="bookTreatment('טיפול פיגמנטציה')"><span class="service-icon">✿</span><div class="service-name">טיפול פיגמנטציה</div><p class="service-desc">איזון גוון העור והבהרת כתמים לחזרה לטוהר טבעי.</p></div>
             <div class="service-card reveal" onclick="bookTreatment('טיפול לעור שמן ואקנה')"><span class="service-icon">❋</span><div class="service-name">טיפול לעור שמן ואקנה</div><p class="service-desc">ניקוי ממוקד, ויסות שומן ומניעת פצעונים לטווח ארוך.</p></div>
@@ -361,7 +361,7 @@
                         <select id="f-treatment">
                             <option value="">בחרי טיפול...</option>
                             <option>טיפול פנים קלאסי</option>
-                            <option>טיפול אנטי-אייג'ינג</option>
+                            <option>טיפול אנטי-אייג׳ינג</option>
                             <option>טיפול לחות אינטנסיבי</option>
                             <option>טיפול פיגמנטציה</option>
                             <option>טיפול לעור שמן ואקנה</option>
@@ -388,7 +388,7 @@
             <div class="contact-links reveal">
                 <a href="https://wa.me/972526762340" class="contact-link"><span>💬</span> WhatsApp</a>
                 <a href="https://instagram.com/liavrahamim" target="_blank" class="contact-link"><span>📷</span> @liavrahamim</a>
-                <a href="https://mail.google.com/mail/?view=cm&to=liavr2402@gmail.com" target="_blank" class="contact-link"><span>✉️</span> liavr2402@gmail.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&to=liavr2402@gmail.com" target="_blank" class="contact-link"><span>✉️</span> <span class="__cf_email__" data-cfemail="2e42474f585c1c1a1e1c6e49434f4742004d4143">[email&#160;protected]</span></a>
             </div>
     </section>
 
@@ -400,6 +400,14 @@
     <div id="nav-proximity-zone"></div>
 
     <script>
+        function bookTreatment(treatment) {
+            document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+            setTimeout(() => {
+                document.getElementById('f-treatment').value = treatment;
+            }, 600);
+        }
+    </script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         (function () {
             const navbar = document.getElementById('navbar');
             const body = document.body;
@@ -419,13 +427,6 @@
                 body.classList.add('nav-open');
                 toggleBtn.classList.add('btn-hidden');
             }
-          function bookTreatment(treatment) {
-                document.getElementById('booking').scrollIntoView({behavior:'smooth'});
-                setTimeout(() => {
-                  document.getElementById('f-treatment').value = treatment;
-                }, 600); // slight delay so scroll finishes first
-              }
-
             function collapseNav() {
                 if (!isExpanded) return;
                 isExpanded = false;
@@ -622,17 +623,4 @@
                     p.alpha -= p.decay;
                     if (p.alpha <= 0) { particles.splice(i, 1); continue; }
                     ctx.save();
-                    ctx.globalAlpha = p.alpha;
-                    ctx.beginPath();
-                    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                    ctx.fillSt
-
-
-
-
-
-
-
-
-
-
+   
