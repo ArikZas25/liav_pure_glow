@@ -108,7 +108,7 @@
     #services .section-label, #services .section-title { text-align:center; }
     .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2rem; max-width:1100px; margin:3rem auto 0; }
     .service-card { background:var(--cream); padding:2.5rem 2rem; border:1px solid rgba(196,168,176,.2); transition:transform .3s,box-shadow .3s; text-align:right; }
-    .service-card:hover { transform:translateY(-6px); box-shadow:0 20px 40px rgba(156,123,138,.1); }
+    .service-card:hover { transform:translateY(-6px); box-shadow:0 20px 40px rgba(156,123,138,.1); cursor: pointer;}
     .service-icon { font-size:1.8rem; margin-bottom:1.2rem; display:block; }
     .service-name { font-family:'Playfair Display',serif; font-size:1.4rem; font-style:italic; color:var(--dark); margin-bottom:.8rem; }
     .service-desc { font-size:.85rem; line-height:1.8; opacity:.85; }
@@ -279,12 +279,12 @@
         <p class="section-label reveal">הטיפולים שלי</p>
         <h2 class="section-title reveal">Pure Glow Treatments</h2>
         <div class="services-grid">
-            <div class="service-card reveal"><span class="service-icon">✦</span><div class="service-name">טיפול פנים קלאסי</div><p class="service-desc">ניקוי עמוק, לחות ואיזון העור — הבסיס לעור בריא ומזוהר.</p></div>
-            <div class="service-card reveal"><span class="service-icon">◈</span><div class="service-name">טיפול אנטי-אייג'ינג</div><p class="service-desc">טכניקות מתקדמות להפחתת קמטים ולחידוש מרקם העור.</p></div>
-            <div class="service-card reveal"><span class="service-icon">◇</span><div class="service-name">טיפול לחות אינטנסיבי</div><p class="service-desc">תזונה עמוקה לעור יבש ועייף — זוהר שמתחיל מבפנים.</p></div>
-            <div class="service-card reveal"><span class="service-icon">✿</span><div class="service-name">טיפול פיגמנטציה</div><p class="service-desc">איזון גוון העור והבהרת כתמים לחזרה לטוהר טבעי.</p></div>
-            <div class="service-card reveal"><span class="service-icon">❋</span><div class="service-name">טיפול לעור שמן ואקנה</div><p class="service-desc">ניקוי ממוקד, ויסות שומן ומניעת פצעונים לטווח ארוך.</p></div>
-            <div class="service-card reveal"><span class="service-icon">◉</span><div class="service-name">ייעוץ עור אישי</div><p class="service-desc">אבחון מדויק של סוג העור ובניית שגרת טיפוח מותאמת.</p></div>
+            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">✦</span><div class="service-name">טיפול פנים קלאסי</div><p class="service-desc">ניקוי עמוק, לחות ואיזון העור — הבסיס לעור בריא ומזוהר.</p></div>
+            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">◈</span><div class="service-name">טיפול אנטי-אייג'ינג</div><p class="service-desc">טכניקות מתקדמות להפחתת קמטים ולחידוש מרקם העור.</p></div>
+            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">◇</span><div class="service-name">טיפול לחות אינטנסיבי</div><p class="service-desc">תזונה עמוקה לעור יבש ועייף — זוהר שמתחיל מבפנים.</p></div>
+            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">✿</span><div class="service-name">טיפול פיגמנטציה</div><p class="service-desc">איזון גוון העור והבהרת כתמים לחזרה לטוהר טבעי.</p></div>
+            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">❋</span><div class="service-name">טיפול לעור שמן ואקנה</div><p class="service-desc">ניקוי ממוקד, ויסות שומן ומניעת פצעונים לטווח ארוך.</p></div>
+            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">◉</span><div class="service-name">ייעוץ עור אישי</div><p class="service-desc">אבחון מדויק של סוג העור ובניית שגרת טיפוח מותאמת.</p></div>
         </div>
     </section>
 
@@ -620,6 +620,7 @@
                     ctx.beginPath();
                     ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
                     ctx.fillSt
+
 
 
 
