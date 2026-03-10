@@ -279,12 +279,12 @@
         <p class="section-label reveal">הטיפולים שלי</p>
         <h2 class="section-title reveal">Pure Glow Treatments</h2>
         <div class="services-grid">
-            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">✦</span><div class="service-name">טיפול פנים קלאסי</div><p class="service-desc">ניקוי עמוק, לחות ואיזון העור — הבסיס לעור בריא ומזוהר.</p></div>
-            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">◈</span><div class="service-name">טיפול אנטי-אייג'ינג</div><p class="service-desc">טכניקות מתקדמות להפחתת קמטים ולחידוש מרקם העור.</p></div>
-            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">◇</span><div class="service-name">טיפול לחות אינטנסיבי</div><p class="service-desc">תזונה עמוקה לעור יבש ועייף — זוהר שמתחיל מבפנים.</p></div>
-            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">✿</span><div class="service-name">טיפול פיגמנטציה</div><p class="service-desc">איזון גוון העור והבהרת כתמים לחזרה לטוהר טבעי.</p></div>
-            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">❋</span><div class="service-name">טיפול לעור שמן ואקנה</div><p class="service-desc">ניקוי ממוקד, ויסות שומן ומניעת פצעונים לטווח ארוך.</p></div>
-            <div class="service-card reveal" onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})"><span class="service-icon">◉</span><div class="service-name">ייעוץ עור אישי</div><p class="service-desc">אבחון מדויק של סוג העור ובניית שגרת טיפוח מותאמת.</p></div>
+            <div class="service-card reveal" onclick="bookTreatment('טיפול פנים קלאסי')"><span class="service-icon">✦</span><div class="service-name">טיפול פנים קלאסי</div><p class="service-desc">ניקוי עמוק, לחות ואיזון העור — הבסיס לעור בריא ומזוהר.</p></div>
+            <div class="service-card reveal" onclick="bookTreatment('טיפול אנטי-אייג\'ינג')"><span class="service-icon">◈</span><div class="service-name">טיפול אנטי-אייג'ינג</div><p class="service-desc">טכניקות מתקדמות להפחתת קמטים ולחידוש מרקם העור.</p></div>
+            <div class="service-card reveal" onclick="bookTreatment('טיפול לחות אינטנסיבי')"><span class="service-icon">◇</span><div class="service-name">טיפול לחות אינטנסיבי</div><p class="service-desc">תזונה עמוקה לעור יבש ועייף — זוהר שמתחיל מבפנים.</p></div>
+            <div class="service-card reveal" onclick="bookTreatment('טיפול פיגמנטציה')"><span class="service-icon">✿</span><div class="service-name">טיפול פיגמנטציה</div><p class="service-desc">איזון גוון העור והבהרת כתמים לחזרה לטוהר טבעי.</p></div>
+            <div class="service-card reveal" onclick="bookTreatment('טיפול לעור שמן ואקנה')"><span class="service-icon">❋</span><div class="service-name">טיפול לעור שמן ואקנה</div><p class="service-desc">ניקוי ממוקד, ויסות שומן ומניעת פצעונים לטווח ארוך.</p></div>
+            <div class="service-card reveal" onclick="bookTreatment('ייעוץ עור אישי')"><span class="service-icon">◉</span><div class="service-name">ייעוץ עור אישי</div><p class="service-desc">אבחון מדויק של סוג העור ובניית שגרת טיפוח מותאמת.</p></div>
         </div>
     </section>
 
@@ -419,6 +419,12 @@
                 body.classList.add('nav-open');
                 toggleBtn.classList.add('btn-hidden');
             }
+          function bookTreatment(treatment) {
+                document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+                setTimeout(() => {
+                  document.getElementById('f-treatment').value = treatment;
+                }, 600); // slight delay so scroll finishes first
+              }
 
             function collapseNav() {
                 if (!isExpanded) return;
@@ -620,6 +626,7 @@
                     ctx.beginPath();
                     ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
                     ctx.fillSt
+
 
 
 
